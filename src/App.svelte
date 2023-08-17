@@ -262,7 +262,7 @@
       };
     });
 
-    const incomeResponse = await axios.get('/data/Revenus moyens par age.csv');
+    const incomeResponse = await axios.get('./data/Revenus moyens par age.csv');
     const csvData = d3.csvParse(incomeResponse.data);
     
     ageIncomeData = csvData.map(row => {
